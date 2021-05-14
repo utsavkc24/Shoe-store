@@ -1,65 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/button_onboard"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.WelcomeScreenFragment">
+    tools:context=".ui.view.WelcomeScreenFragment">
 
-    <ImageView
-        android:id="@+id/welcome_onboard_logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="128dp"
-        android:layout_marginEnd="32dp"
-        android:scaleX="2"
-        android:scaleY="2"
-        android:src="@drawable/trainers"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/text_view_onboard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="180dp"
-        android:layout_marginEnd="32dp"
-        android:fontFamily="@font/baloo"
-        android:text="@string/title"
-        android:textColor="@color/design_default_color_on_secondary"
-        android:textSize="32sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcome_onboard_logo" />
 
-    <TextView
-        android:id="@+id/text_view_onboard_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:fontFamily="sans-serif-light"
-        android:text="@string/description"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/text_view_onboard"
-        app:layout_constraintStart_toStartOf="@+id/text_view_onboard"
-        app:layout_constraintTop_toBottomOf="@+id/text_view_onboard" />
+        <ImageView
+            android:id="@+id/welcome_onboard_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="128dp"
+            android:layout_marginEnd="32dp"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:src="@drawable/trainers"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
-        android:background="@drawable/shape"
-        android:fontFamily="@font/baloo"
-        android:text="@string/get_started"
-        app:layout_constraintEnd_toEndOf="@+id/text_view_onboard"
-        app:layout_constraintStart_toStartOf="@+id/text_view_onboard"
-        app:layout_constraintTop_toBottomOf="@+id/text_view_onboard" />
+        <TextView
+            android:id="@+id/text_view_onboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/baloo"
+            android:text="@string/title"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="@+id/welcome_onboard_logo"
+            app:layout_constraintStart_toStartOf="@+id/welcome_onboard_logo"
+            app:layout_constraintTop_toBottomOf="@+id/welcome_onboard_logo" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/text_view_onboard_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/description"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/text_view_onboard"
+            app:layout_constraintStart_toStartOf="@+id/text_view_onboard"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_onboard" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="552dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/shape"
+            android:fontFamily="@font/baloo"
+            android:text="@string/get_started"
+            android:textColor="@color/design_default_color_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/text_view_onboard"
+            app:layout_constraintStart_toStartOf="@+id/text_view_onboard"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
